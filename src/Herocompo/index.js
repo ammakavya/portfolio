@@ -13,7 +13,6 @@ const Herocompo = () => {
         backgroundImage: `url(${Myimage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-      
         overflow: 'hidden',
          '@media (max-width: 1200px)': {
           width: 1200,
