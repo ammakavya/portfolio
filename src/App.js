@@ -10,7 +10,7 @@ import { Home } from './component/Home';
 import { Projects } from './component/pages/Projects';
 import Experience from './component/Experience';
 import Skills from './component/pages/Skills';
-import Grids from './component/Grids';
+
 
 function App() {
   return (

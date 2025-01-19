@@ -8,17 +8,17 @@ const Herocompo = () => {
     <>
     <Box
       sx={{
-        width: 1700,
+        width: 'auto',
         height: 600,
         backgroundImage: `url(${Myimage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         overflow: 'hidden',
          '@media (max-width: 1200px)': {
-          width: 1200,
+          width: 1400,
           height: 400,
         },
-        '@media(max-width:600px)':{
+        '@media(max-width:780px)':{
           width:'100%',
           height:300
         }
