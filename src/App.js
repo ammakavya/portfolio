@@ -14,7 +14,7 @@ import Skills from './component/pages/Skills';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
     <div className="App">
       <NavBar />
 
