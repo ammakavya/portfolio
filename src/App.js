@@ -5,7 +5,7 @@ import Herocompo from './Herocompo';
 import AboutMe from './component/AboutMe';
 
 import Contact from './component/pages/Contact';
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Outlet, Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Home } from './component/Home';
 import { Projects } from './component/pages/Projects';
 import Experience from './component/Experience';
@@ -14,21 +14,20 @@ import Skills from './component/pages/Skills';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <NavBar/> 
-      <Outlet/> 
-      {/* <Grids/> */}
-    <div>
-     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/experience" element={<Experience/>} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-     </Routes>
-     </div>
+      </Routes>
     </div>
+  </Router>
   );
 }
  export default App;
